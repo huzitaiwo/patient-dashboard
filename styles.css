@@ -6,49 +6,153 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
+  font-size: 0.9rem;
 }
-
 body {
   background-color: #007aff;
   color: #fff;
   display: flex;
 }
-
 .sidebar {
-  width: 300px;
+  width: 250px;
   padding: 30px;
 }
-
 .logo {
   width: 70px;
   height: 70px;
 }
-
 .dashboard {
   width: 100%;
 }
-
 .links li {
   padding: 10px 20px;
   margin: 20px 0;
   list-style: none;
   border-radius: 8px;
 }
-
 .links li.active {
   background: #fff;
 }
-
 .links a {
   text-decoration: none;
   font-weight: 500;
   color: #fff;
 }
-
 .links li.active a {
   color: #007aff;
 }
-
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-links > * {
+  padding: 10px;
+}
+.nav-links li,
+.nav-links button {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+.nav-links button {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-links img {
+  padding-right: 10px;
+}
 main {
   background: #fff;
+  color: #141414;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  gap: 40px;
+}
+h1 {
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h3.greet {
+  padding: 15px 0;
+}
+form {
+  box-shadow: 0 5px 5px #fafaf7;
+  border-radius: 7px;
+  border: 1px solid #fafaf7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+}
+.secondary-heading {
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+table {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.appt-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+th {
+  background: #f9fafa;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #fafaf7;
+}
+.appt-grid img {
+  cursor: pointer;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.card {
+  background: #007aff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.prescription tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.prescription img {
+  cursor: pointer;
 }

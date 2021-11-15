@@ -21,21 +21,24 @@
     </div>
     <div class="dashboard">
         <nav>
+            <button class="hamburger">
+                <img src="./icons/hamburger.svg" alt="">
+            </button>
             <ul class="nav-links">
                 <li><a href=""><img src="./icons/cart.svg" alt=""></a></li>
                 <li><a href=""><img src="./icons/notification.svg" alt=""></a></li>
                 <li><img src="./icons/cog.svg" alt=""><a href="">Settings</a></li>
                 <button class="user">
                     <img src="./images/user.png" alt="">
-                    <p>Caroline Tayo</p>
-                    <img src="./icons/expand.svg" alt="">
+                    <p class="md-none">Caroline Tayo</p>
+                    <img class="md-none" src="./icons/expand.svg" alt="">
                 </button>
             </ul>
         </nav>
         <main>
             <section>
                 <h1>Hi Caroline</h1>
-                <h3 class="greet">Good Afternoon</h3>
+                <h3 class="secondary-heading">Good Afternoon</h3>
                 <form class="search">
                     <input type="text">
                     <img src="./icons/search.svg" alt="">
@@ -107,54 +110,64 @@
                                 <span>Date</span>
                                 <img src="./icons/caret_down.svg" alt="">
                             </th>
-                            <th>Prescription Details</th>
+                            <th class="md-none">Prescription Details</th>
                         </tr>
                         <tr>
                             <td>Appointment 1</td>
                             <td>Apeh Andrew</td>
                             <td>12th Sep, 2021</td>
-                            <td><button>Details</button></td>
+                            <td class="md-none"><button>Details</button></td>
                         </tr>
                         <tr>
                             <td>Appointment 2</td>
                             <td>Apeh Andrew</td>
                             <td>13th Sep, 2021</td>
-                            <td><button>Details</button></td>
+                            <td class="md-none"><button>Details</button></td>
                         </tr>
                         <tr>
                             <td>Appointment 3</td>
                             <td>Apeh Andrew</td>
                             <td>14th Sep, 2021</td>
-                            <td><button>Details</button></td>
+                            <td class="md-none"><button>Details</button></td>
                         </tr>
                         <tr>
                             <td>Appointment 4</td>
                             <td>Apeh Andrew</td>
                             <td>15th Sep, 2021</td>
-                            <td><button>Details</button></td>
+                            <td class="md-none"><button>Details</button></td>
                         </tr>
                         <tr>
                             <td>Appointment 5</td>
                             <td>Apeh Andrew</td>
                             <td>16th Sep, 2021</td>
-                            <td><button>Details</button></td>
+                            <td class="md-none"><button>Details</button></td>
                         </tr>
                     </table>
                 </div>
             </section>
             <aside>
-                <h2>Reminder</h2>
+                <h2 class="secondary-heading">Reminder</h2>
                 <div class="box reminder">
-                    <p>Appointment with Dr. Cintia</p>
-                    <p>Evening dose; 2 tablets Paracetamol</p>
-                    <p>Appointment with Dr. Cintia</p>
+                    <div class="remind">
+                        <p><img src="./icons/remind.svg" alt="">Appointment with Dr. Cintia</p>
+                        <p>11:00am</p>
+                    </div>
+                    <div class="remind">
+                        <p><img src="./icons/remind.svg" alt="">Evening dose; 2 tablets Paracetamol</p>
+                        <p>7:00pm</p>
+                        
+                    </div>
+                    <div class="remind">
+                        <p><img src="./icons/remind.svg" alt="">Appointment with Dr. Cintia</p>
+                        <p>11:00am</p>
+                    </div>
                     <button class="more">View More</button>
                 </div>
-                <h2>Chats</h2>
+                <h2 class="secondary-heading">Chats</h2>
                 <div class="box chats">
                     <div class="chat">
                         <div class="chat-user">
-                            <img src="" alt="">
+                            <img src="./images/user-sq.jpg" alt="">
                             <div class="details">
                                 <h4>Dr. Cintia</h4>
                                 <p>Alright...</p>
@@ -164,7 +177,7 @@
                     </div>
                     <div class="chat">
                         <div class="chat-user">
-                            <img src="" alt="">
+                            <img src="./images/user-sq.jpg" alt="">
                             <div class="details">
                                 <h4>Dr. Cintia</h4>
                                 <p>Alright...</p>
@@ -174,7 +187,7 @@
                     </div>
                     <div class="chat">
                         <div class="chat-user">
-                            <img src="" alt="">
+                            <img src="./images/user-sq.jpg" alt="">
                             <div class="details">
                                 <h4>Dr. Cintia</h4>
                                 <p>Alright...</p>
@@ -184,35 +197,35 @@
                     </div>
                     <button class="more">View More</button>
                 </div>
-                <h2>Appointment log</h2>
+                <h2 class="secondary-heading">Appointment log</h2>
                 <div class="box appt-log">
                     <div class="chat">
                         <div class="chat-user">
-                            <img src="" alt="">
+                            <img src="./images/user-sq.jpg" alt="">
                             <h4>Dr. Cintia</h4>
                         </div>
                         <div class="log">
-                            <img src="" alt="">
-                            <p>Alright...</p>
-                        </div>
-                    </div>
-                    <div class="chat">
-                        <div class="chat-user">
-                            <img src="" alt="">
-                            <h4>Dr. Cintia</h4>
-                        </div>
-                        <div class="log">
-                            <img src="" alt="">
+                            <img src="./icons/call_mised.svg" alt="">
                             <p>9th, July 2021</p>
                         </div>
                     </div>
                     <div class="chat">
                         <div class="chat-user">
-                            <img src="" alt="">
-                            <h4>9th, July 2021</h4>
+                            <img src="./images/user-sq.jpg" alt="">
+                            <h4>Dr. Cintia</h4>
                         </div>
                         <div class="log">
-                            <img src="" alt="">
+                            <img src="./icons/videocam.svg" alt="">
+                            <p>9th, July 2021</p>
+                        </div>
+                    </div>
+                    <div class="chat">
+                        <div class="chat-user">
+                            <img src="./images/user-sq.jpg" alt="">
+                            <h4>Dr. Cintia</h4>
+                        </div>
+                        <div class="log">
+                            <img src="./icons/call.svg" alt="">
                             <p>9th, July 2021</p>
                         </div>
                     </div>

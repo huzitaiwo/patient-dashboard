@@ -14,6 +14,7 @@ body {
   display: flex;
 }
 .sidebar {
+  background-color: #007aff;
   width: 250px;
   padding: 30px;
 }
@@ -41,9 +42,21 @@ body {
 .links li.active a {
   color: #007aff;
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hamburger {
+  display: none;
+  padding: 5px 7px;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .nav-links {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 .nav-links > * {
@@ -78,12 +91,9 @@ main {
   gap: 40px;
 }
 h1 {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   font-size: 1.5rem;
   font-weight: 700;
-}
-h3.greet {
-  padding: 15px 0;
 }
 form {
   box-shadow: 0 5px 5px #fafaf7;
@@ -104,7 +114,7 @@ form input {
 }
 .secondary-heading {
   font-size: 1.2rem;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 table {
   width: 100%;
@@ -142,6 +152,8 @@ td {
 }
 .card {
   background: #007aff;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -155,4 +167,104 @@ td {
 }
 .prescription img {
   cursor: pointer;
+}
+.prescription button {
+  padding: 5px 7px;
+  color: #007aff;
+  border-radius: 5px;
+  border: 1px solid #c9c8c8;
+}
+.box {
+  background: #fafaf7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.remind {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.remind p {
+  display: flex;
+  align-items: center;
+}
+.remind img {
+  padding-right: 5px;
+}
+.more {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 7px;
+  color: #007aff;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  margin: 0 auto;
+}
+.chat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.chat-user {
+  display: flex;
+  align-items: center;
+}
+.chat-user img {
+  margin-right: 10px;
+}
+.log {
+  text-align: center;
+}
+
+/* tablet landscape */
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    padding: 0;
+    width: 0;
+  }
+  .sidebar.active {
+    padding: 15px;
+    width: initial;
+  }
+  .links li {
+    padding: 10px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: initial;
+  }
+}
+@media (max-width: 750px) {
+  .user img {
+    padding: 0;
+  }
+  .appt-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+    gap: 0;
+  }
+  .card {
+    height: 150px;
+  }
+  .md-none {
+    display: none;
+  }
+  .prescription tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

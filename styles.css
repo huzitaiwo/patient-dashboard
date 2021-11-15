@@ -186,6 +186,7 @@ td {
   color: #007aff;
   border-radius: 5px;
   border: 1px solid #c9c8c8;
+  cursor: pointer;
 }
 .box {
   background: #fafaf7;

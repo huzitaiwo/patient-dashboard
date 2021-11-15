@@ -172,6 +172,7 @@ td {
   justify-content: center;
   border-radius: 50%;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 .prescription tr {
   display: grid;
@@ -283,5 +284,15 @@ td {
   .prescription tr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* mobile protrait */
+@media (max-width: 543px) {
+  .sm-none {
+    display: none;
+  }
+  .prescription tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
